@@ -6,6 +6,8 @@ element, size of priority queue, and print it.
 4. Write a c++ program, to swap the elements of two priority queues of int type.
 5. Write a c++ program, to show that priority_queue is by default a Max Heap.
 Note:
+
+
 If elements are printed in descending order, then we have a max heap.
 6. Write a c++ program, to use priority_queue to implement min heap.
 7. Given two sorted arrays A[] and B[] of sizes N and M respectively, the task is to
