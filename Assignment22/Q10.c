@@ -1,0 +1,1 @@
+10. Find out the maximum and minimum from an array using dynamic memory allocation

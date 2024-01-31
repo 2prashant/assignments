@@ -1,0 +1,86 @@
+/*
+
+4. Write a program to find the minimum element in a BST.
+
+*/
+#include<iostream>
+using namespace std;
+class BST
+{
+     private:
+             int data;
+             BST* right;
+             BST* left;
+     public:
+            BST(int v)
+            {  
+                data=v;
+                left=NULL;
+                right=NULL;
+            }
+            BST()
+            {
+                data=0;
+                left=NULL;
+                right=NULL;
+            }
+            BST* insert(int v)
+            {
+                 if(this==NULL)
+                 {
+                     return new BST(v);
+                 }
+                 if(this->data > v)
+                 {
+                      this->left=this->left->insert(v);
+                 }
+                 else if(this->data < v)
+                 {
+                     this->right=this->right->insert(v);
+                 }
+                 else
+                 {
+                    return this;
+                 }
+            }
+            int minelement()
+            {
+                if(this==NULL)
+                {
+                    return 0;
+                }
+                if(this->left==NULL)
+                {
+                    return this->data;
+                }
+                else if(this->left!=NULL)
+                {
+                     this->left->minelement();
+                }
+
+            }
+            void inorder()
+            {
+                if(this!=NULL)
+                {
+                   this->left->inorder();
+                   cout<<this->data<<"=>";
+                   this->right->inorder();
+                }
+            }
+
+};
+int main()
+{
+        BST* root=new BST(20);
+        root->insert(15);
+        root->insert(25);
+        root->insert(10);
+        root->insert(18);
+        root->insert(23);
+        root->insert(30);
+        root->inorder();
+        cout<<"\nMin element="<<root->minelement()<<endl;
+
+
+}

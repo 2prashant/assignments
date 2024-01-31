@@ -1,0 +1,1 @@
+//4. Write a program to input and print text using dynamic memory allocation.

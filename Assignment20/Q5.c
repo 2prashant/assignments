@@ -1,0 +1,1 @@
+5. Write a program to find the maximum number between two numbers using a pointer
