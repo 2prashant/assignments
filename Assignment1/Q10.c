@@ -8,7 +8,6 @@ Output format –
 int main()
 {
     int d,m,y;
-  //  printf("\"");
     scanf("%d/%d/%d",&d,&m,&y);
     printf("Day - %d , Month - %d ,year - %d",d,m,y);
     return 0;
