@@ -7,5 +7,5 @@ int main()
      printf("=%d",x);
       return 0;
 }
-//output=
+//output=7
 
